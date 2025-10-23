@@ -30,7 +30,7 @@ header {
 
 .hero {
     background: url('../img/panaderia.jpg') center/cover no-repeat;
-    color: white;
+    color: black;
     text-align: center;
     padding: 6rem 2rem;
 }
@@ -58,4 +58,8 @@ footer {
     color: white;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+img{
+    width: 400px;
 }

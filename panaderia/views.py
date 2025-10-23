@@ -22,7 +22,7 @@ def localizacion(request):
         },
         'contacto': {
             'telefono': '+34 123 456 789',
-            'email': 'info@fruteriaturing.com',
+            'email': 'info@panaderiaEnigma.com',
         }
     }
     return render(request, 'localizacion.html', context=context)

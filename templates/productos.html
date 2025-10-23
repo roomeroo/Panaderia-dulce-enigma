@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Productos | El Dulce Enigma{% endblock %}
 
@@ -7,17 +8,17 @@
     <h2>Nuestros productos</h2>
     <div class="grid">
         <div class="producto">
-            <img src="{% static 'img/pan-artesano.jpg' %}" alt="Pan artesano">
+            <img src="{% static 'img/pan-artesano.png' %}" alt="Pan artesano">
             <h3>Pan artesano</h3>
             <p>Hecho con masa madre y harinas seleccionadas.</p>
         </div>
         <div class="producto">
-            <img src="{% static 'img/croissant.jpg' %}" alt="Croissant de mantequilla">
+            <img src="{% static 'img/croissant.png' %}" alt="Croissant de mantequilla">
             <h3>Croissant de mantequilla</h3>
             <p>Dorados, crujientes y con un interior irresistible.</p>
         </div>
         <div class="producto">
-            <img src="{% static 'img/pastel.jpg' %}" alt="Pasteles del día">
+            <img src="{% static 'img/pastel.png' %}" alt="Pasteles del día">
             <h3>Pasteles del día</h3>
             <p>Variedades según temporada y creatividad del chef.</p>
         </div>

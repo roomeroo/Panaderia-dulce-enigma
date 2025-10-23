@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from panaderia.views import contacto, index, ofertas, productos
+from panaderia.views import contacto, index, ofertas, productos, localizacion
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +25,5 @@ urlpatterns = [
     path('productos/', productos, name='productos'),
     path('ofertas/', ofertas, name='ofertas'),
     path('contacto/', contacto, name='contacto'),
+    path('localizacion/', localizacion, name='localizacion'),
 ]
