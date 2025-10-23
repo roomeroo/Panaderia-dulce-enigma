@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio | El Dulce Enigma{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <h1>Bienvenido a <span>El Dulce Enigma</span></h1>
+        <p>El arte de hornear con amor y misterio. Panes, dulces y aromas que te harán sonreír.</p>
+        <a href="{% url 'productos' %}" class="btn">Ver nuestros productos</a>
+    </div>
+</section>
+
+<section class="about">
+    <h2>Sobre nosotros</h2>
+    <p>Somos una panadería artesanal en Málaga que combina tradición, sabor y un toque enigmático. 
+       Cada día horneamos con ingredientes naturales y pasión por lo auténtico.</p>
+</section>
+{% endblock %}

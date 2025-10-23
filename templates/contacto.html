@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Contacto | El Dulce Enigma{% endblock %}
+
+{% block content %}
+<section class="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes un pedido especial o alguna consulta? Escríbenos:</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+    </form>
+
+    <p>También puedes llamarnos al <strong>+34 123 456 789</strong> o escribirnos a 
+        <a href="mailto:info@eldulceenigma.com">info@eldulceenigma.com</a>
+    </p>
+</section>
+{% endblock %}

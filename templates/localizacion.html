@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Dónde estamos | El Dulce Enigma{% endblock %}
+
+{% block content %}
+<section class="localizacion">
+    <h2>Encuéntranos</h2>
+    <p>📍 {{ localizacion.direccion }}</p>
+
+    <div class="mapa">
+        <iframe 
+            width="100%" height="400"
+            src="https://www.google.com/maps?q={{ localizacion.latitud }},{{ localizacion.longitud }}&output=embed">
+        </iframe>
+    </div>
+
+    <div class="contacto-info">
+        <p>📞 {{ contacto.telefono }}</p>
+        <p>✉️ {{ contacto.email }}</p>
+    </div>
+</section>
+{% endblock %}
